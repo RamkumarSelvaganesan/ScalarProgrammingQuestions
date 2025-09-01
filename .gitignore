@@ -1,0 +1,22 @@
+# IntelliJ project files
+.idea/
+*.iml
+/shelf/
+/.idea/workspace.xml
+
+# Editor-based HTTP Client requests
+/httpRequests/
+
+# Datasource local storage files
+/dataSources/
+/dataSources.local.xml
+
+# Ignore compiled class files
+*.class
+
+# Ignore build output directories
+/target/
+out/
+
+# Ignore other XML configs (optional)
+# *.xml
