@@ -1,4 +1,4 @@
-/*Question: A program to count the factors of a number
+/* Question: A program to count the factors of a number
 Example
 Number: 12
 Factors: 1, 2, 3, 4, 6, 12
@@ -7,7 +7,7 @@ Total count: 6
 
 package scalar.intermediate;
 
-public class CountFactor {
+public class Factors {
     public int getNoOfFactors(int n) {
         int count = 0;
         for (int i = 1; i * i <= Math.abs(n); i++) {
@@ -21,9 +21,13 @@ public class CountFactor {
         }
         return count;
     }
+
+    public boolean isPrime(int n) {
+        return n > 1 && getNoOfFactors(n) == 2;
+    }
 }
 
-/* Explaination
+/* Explaination of getNoOfFactors
 
 Why Use √n Optimization?
  - Instead of checking all numbers from 1 to n, we only check numbers up to √n because:
